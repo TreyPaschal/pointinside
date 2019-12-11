@@ -1,0 +1,65 @@
+html, body{
+    margin:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:#FFF3CD;
+}
+
+label{
+    font-weight: 600;
+}
+
+h1{
+    font-size: 2.25em;
+    margin:6px
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+.navbar-brand > img{
+    width:100px;
+}
+
+.navbar-dark{
+    background-color: #154366;
+}
+
+.btn-primary{
+    background-color: #FFCD50;
+    color:#000;
+    border:none;
+    margin-top:16px;
+    font-weight: 600;
+}
+
+.alert{
+    padding:6px;
+    font-weight:600;
+}
+
+.banner{
+    background-image: url(assets/images/map-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height:400px;
+    padding:2%;
+}
+
+.user-input{
+    background: rgba(69, 111, 142, .81);
+    padding: 16px;
+    color:#fff;
+    text-align: center;
+}
+
+.footer{
+    background: #114267;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    padding:16px;
+    color:#fff;
+}

@@ -1,0 +1,46 @@
+<html>
+<head>
+  <title>PointInside Code Challenge - Jennings Paschal</title>
+</head>
+<body>
+  <div>
+    <nav class="navbar navbar-dark static-top">
+      <a class="navbar-brand" href="#">
+        <img src="../assets/images/text-logo-transparent-white.png" alt="">
+      </a>
+    </nav>
+    <div class="banner">
+      <div class="container">
+        <div class="user-input">
+          <h1 style="margin-top: 12px">Point Inside Understands Location</h1>
+          <h3>Find a time zone based on geographic location.</h3>
+          <div>
+            <label>Lattitude</label>
+          </div>
+          <div>
+            <input [ngModel]="lattitude">
+          </div>
+          <div>
+            <label>Longitude</label>
+          </div>
+          <div>
+            <input [ngModel]="longitude">
+          </div>
+          <div>
+            <button class="btn btn-primary" (click)="getData()">Get Time Zone</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="alert alert-warning text-center" role="alert" *ngIf="visible">
+      The time zone of lattitude : {{lattitude}} and longitude : {{longitude}} is {{timeZoneCountry}} - {{timeZoneName}}
+      - {{timeZoneAbbreviation}}
+    </div>
+    <footer class="footer">
+      <div class="text-center">
+        © POINT INSIDE. ALL RIGHTS RESERVED.
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
